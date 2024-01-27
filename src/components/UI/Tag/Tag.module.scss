@@ -1,0 +1,21 @@
+.tag {
+    padding: 4px 12px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px 0px rgba(25, 32, 44, 0.04);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    display: inline-block;
+    @media (max-width: 467.98px) {
+        padding: 3px 8px;
+        font-size: 12px;
+    }
+}
+.green {
+    background-color: #c6f6d5;
+    color: #36a269;
+}
+.red {
+    background-color: #f6c6c6;
+    color: #a23636;
+}

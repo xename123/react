@@ -1,0 +1,18 @@
+input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 2px;
+    border: 1px solid #8d8dff;
+    background: #00000045;
+    color: #ababff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.25px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    &:focus {
+        border: 1px solid #7171ff;
+        background: #323290;
+    }
+}

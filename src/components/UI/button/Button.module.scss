@@ -1,0 +1,87 @@
+.button {
+    padding: 12px 32px;
+    border-radius: 2px;
+    background-color: #5d5dff;
+    box-shadow: 0px 1px 3px 0px rgba(25, 32, 44, 0.04);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.25px;
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: #2b2b68;
+        }
+    }
+    @media (max-width: 467.98px) {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+.small {
+    padding: 8px 20px;
+    @media (max-width: 467.98px) {
+        padding: 5px 15px;
+    }
+}
+.transparent {
+    color: #5d5dff;
+    background-color: transparent;
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: #2d2d34;
+        }
+    }
+}
+.gray {
+    background-color: #33363a;
+    box-shadow: 0px 10px 15px -3px rgba(21, 23, 25, 0.16);
+    color: #c5d2dc;
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: #2a2a2b;
+        }
+    }
+}
+.white {
+    background-color: #f4f4ff;
+    color: #5d5dff;
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: #bebee2;
+        }
+    }
+}
+.google {
+    position: relative;
+    padding: 12px 70px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.25px;
+    background: #e53d3e;
+    box-shadow: 0px 10px 15px -3px rgba(21, 23, 25, 0.16);
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    img {
+        position: absolute;
+        height: calc(100% - 24px);
+        max-width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 12px;
+        left: 16px;
+        padding: 3px 20px 3px 0px;
+        border-right: 1px solid #f56565;
+    }
+    @media (any-hover: hover) {
+        &:hover {
+            background: #6f1e1e;
+        }
+    }
+}

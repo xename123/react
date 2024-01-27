@@ -1,0 +1,52 @@
+.header {
+    position: relative;
+    padding: 24px 0px;
+    > div {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}
+.list {
+    display: flex;
+    gap: 30px;
+    @media (max-width: 467.98px) {
+        gap: 20px;
+    }
+}
+.shape {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.userHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    > img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    &__content {
+        max-width: 150px;
+        h6 {
+            font-size: 12px;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+    button {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

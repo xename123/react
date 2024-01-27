@@ -1,0 +1,32 @@
+.reviews {
+    margin-bottom: 80px;
+    [class="_container"] {
+        > h2 {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+                @media (max-width: 467.98px) {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+        > p {
+            &:not(:last-child) {
+                margin-bottom: 80px;
+                @media (max-width: 467.98px) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        @media (max-width: 767.98px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    @media (max-width: 467.98px) {
+        margin-bottom: 50px;
+    }
+}

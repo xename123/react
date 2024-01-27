@@ -1,0 +1,43 @@
+.checkbox {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    &:not(:last-child) {
+        margin-bottom: em(5);
+    }
+    input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        &:focus + [class="label"]:before {
+        }
+        &:checked + [class="label"]:before {
+            background: url("../../../img/icons/check-signed.svg") 60% 60% no-repeat;
+            background-size: 80%;
+            background-color: #5d5dff;
+        }
+    }
+    label {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        gap: 10px;
+        color: #9ba9b4;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: -0.25px;
+        &:before {
+            content: "";
+            flex: 0 0 20px;
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            border: 1px solid #5d5dff;
+        }
+    }
+}

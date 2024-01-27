@@ -1,0 +1,58 @@
+.review {
+    padding: 24px;
+    background-color: #25282c;
+    &__image {
+        position: relative;
+        display: inline-block;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+    &__user {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+    &__quote {
+        position: absolute;
+        top: 0;
+        right: -12px;
+    }
+    &__text {
+        color: #9ba9b4;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: -0.25px;
+        &:not(:last-child) {
+            padding-bottom: 24px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #33363a;
+        }
+        @media (max-width: 467.98px) {
+            font-size: 15px;
+            &:not(:last-child) {
+                padding-bottom: 15px;
+                margin-bottom: 12px;
+                border-bottom: 1px solid #33363a;
+            }
+        }
+    }
+    &__about {
+        color: #d9e3ea;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: -0.25px;
+        @media (max-width: 467.98px) {
+            font-size: 12px;
+        }
+    }
+    &__split {
+        color: #33363a;
+        font-weight: 400;
+    }
+    &__category {
+        color: #5d5dff;
+    }
+}
